@@ -24,7 +24,7 @@ First, let's install dependencies and get your backend provisioned:
 
 Then, in another terminal, load the sample documents and start your Next.js app:
 
-    $ npx convex import --replace initial_dataset.zip
+    $ npx convex import --replace --yes initial_dataset.zip
     $ npm run dev
 
 Check out the app at http://localhost:3000/
