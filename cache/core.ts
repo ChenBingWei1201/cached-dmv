@@ -14,7 +14,7 @@ export type SubKey = string;
 export type QueryKey = string;
 export type CachedQuery<Query extends FunctionReference<"query">> = {
   refs: Set<string>;
-  evictTimer: number | null; // SetTimeout
+  evictTimer: ReturnType<typeof setTimeout> | null; // SetTimeout
   unsub?: () => void;
   value?: FunctionReturnType<Query>;
 };
